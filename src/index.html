@@ -1,0 +1,39 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+  <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.8.2/css/all.min.css" />
+</head>
+
+<body>
+
+  <div style="padding:10px">
+    <div id="topHeading">
+      <i class="fas fa-th"></i>
+      <h2 style="display:inline;">Grid Jr.</h2>
+    </div>
+
+    <i class="fa fa-pause pause" onclick="pauseSong(this)" style="cursor:pointer;"></i>
+
+    <input type="file" id="songDropdown" onchange="songChanged()" />
+
+    <label for="ctl_presets">Preset:</label>&nbsp;<select id="ctl_presets" data-option="preset"></select> all streams via <a href="https://www.internet-radio.com/" target="_blank">internet-radio.com</a>:
+   <select id="radioStations">
+            <option value="" selected>Select a station</option>
+            <option value="https://cors-anywhere.herokuapp.com/http://us4.internet-radio.com:8266/;stream">SmoothJazzFlorida.com</option>
+            <option value="https://cors-anywhere.herokuapp.com/http://us4.internet-radio.com:8258/;stream">ClassicRockFlorida.com</option>
+            <option value="https://cors-anywhere.herokuapp.com/http://hirschmilch.de:7000/;stream/3">Hirschmilch.de </option>
+            <option value="https://cors-anywhere.herokuapp.com/http://uk7.internet-radio.com:8226/;stream">DanceRadioUK.com</option>
+            <option value="https://cors-anywhere.herokuapp.com/http://174.36.206.197:8000/;stream/1">VeniceClassicRadio.eu</option>
+
+        </select>
+  </div>
+
+  <div id="canvasContainer">
+    <canvas id="scope"></canvas>
+  </div>
+
+</body>
+
+</html>

@@ -1,0 +1,38 @@
+html,
+body,
+div,
+canvas {
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  padding: 10px;
+  height: 100vh;
+  background-color: black;
+  color: chartreuse;
+  font-family: monospace;
+  text-align: center;
+}
+
+input[type="file"] {
+  border: 1px solid gray;
+}
+
+#topHeading {
+  padding: 5px;
+}
+
+#canvasContainer {
+  display: flex;
+  flex-direction: column;
+  height: 90%;
+  min-width: 300px;
+  min-height: 300px;
+}
+
+@media (max-width: 750px) {
+  body {
+    font-size: 90%;
+  }
+}
